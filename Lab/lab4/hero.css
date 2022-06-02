@@ -1,0 +1,68 @@
+section{
+    margin-left:80px ;
+}
+.navbar{
+    background-color: rgb(249, 248, 248);
+    border-radius: 15px;
+    margin-top: -15px;
+    margin: -5px;
+}
+.navbar ul{
+    overflow: auto;
+}
+.navbar li{
+    float: left;
+    list-style: none;
+    margin: 10px 15px;
+    margin-left: 0px
+}
+.navbar li a{
+    color: rgb(26, 24, 24);
+    padding: 3px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.6s ease;
+    font-size: 13px;
+}
+.navbar li a:hover{
+    color: rgb(220, 99, 99);
+    cursor: pointer;
+    text-decoration: underline;
+}
+li b{
+    margin-right: 150px;
+}
+ nav li .btn{
+    border: 1px solid  gray;
+    margin-left:150px ;
+    padding: 2px 5px 2px 1px;
+    cursor: pointer;
+}
+.box{
+    border: solid 1px #f2f3f4;
+    border-radius: 5px;
+    padding: 10px 2px 10px 15px;
+    margin: 10px;
+    height: 20px;
+    width: fit-content;
+    text-decoration: none;
+}
+ .email{
+    color: #abafbb;
+    font-size: 12px;
+    margin-right: 50px;
+    text-decoration: none;
+}
+.join{
+    border: solid 1px #3a82f6;
+    background-color: #3a82f6;
+    border-radius: 5px;
+    font-size: 10px;
+    padding: 7px;
+    color: white;
+}
+.right img{
+    float: right;
+    margin-right: 180px;
+    margin-top: -180px;
+}

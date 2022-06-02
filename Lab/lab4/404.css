@@ -1,0 +1,50 @@
+body{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left:0;
+    right:0;
+    bottom:0;
+    width: fit-content;
+    height: fit-content;
+}
+.top{
+    font-size: 30px;
+    display: inline-block;
+}
+.left{
+    margin-left: 70px;
+}
+.btn-1{
+    margin-left: -5px;
+}
+.num{
+    color: #5249e5;
+    border: solid 0.5px rgb(245, 242, 240);
+    width: fit-content;
+    padding: 10px 0px 10px 20px;
+    margin-right: 20px;
+}
+.btn-2{
+    font-size: 11px;
+    color: rgb(112, 106, 106);
+}
+.btn{
+    text-decoration: none;
+    font-size: 9px;
+    display: inline-block; 
+    border: 1px solid ;
+    border-radius: 5px;
+    padding: 4px 10px;
+    margin-top: 30px;
+}
+.btn-home{
+    background-color: #5046e5;
+    color: aliceblue;
+
+}
+.btn-contact{
+    background-color: #e0e7fe;
+    border-color: #e0e7fe;
+    color: blue;
+}

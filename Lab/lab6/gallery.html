@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Photo gallery
+        l</title>
+      
+      <style>
+        .images{
+            height: fit-content;
+        }
+        .images img{
+            height: 600px;
+        }
+        .sliders{
+            /* position: absolute; */
+            height: 20px;
+            width: 20px;
+            background-color: black;
+            position: relative;
+            display: inline-block;
+            color: aliceblue;
+        
+            border-radius: 5px;
+            padding: 5px;
+        }
+        .sliders .left{
+            position: absolute;
+            left: 200px;
+        }
+      </style>
+   </head>
+   <body>
+      <div class="content">
+         <div class="images">
+            <img src="./photos/img1.JPEG">
+            <img src="./photos/img2.JPEG">
+            <img src="./photos/img3.JPEG">
+    
+         </div>
+         <div class="btm-slides">
+            <span onclick="btm_slide(1)"></span>
+            <span onclick="btm_slide(2)"></span>
+            <span onclick="btm_slide(3)"></span>
+           
+         </div>
+         <div class="sliders left" onclick="side_slide(-1)">
+            <span class="Sangle-left">&lt;</span>
+         </div>
+         <div class="sliders right" onclick="side_slide(1)">
+            <span class="fas fa-angle-right">&gt;</span>
+         </div>
+      </div>
+      <script>
+         var indexValue = 1;
+         showImg(indexValue);
+         function btm_slide(e){showImg(indexValue = e);}
+         function side_slide(e){showImg(indexValue += e);}
+         function showImg(e){
+           var i;
+           const img = document.querySelectorAll('img');
+           const slider = document.querySelectorAll('.btm-slides span');
+           if(e > img.length){indexValue = 1}
+           if(e < 1){indexValue = img.length}
+           for(i = 0; i < img.length; i++){
+             img[i].style.display = "none";
+           }
+       
+           img[indexValue-1].style.display = "block";
+           slider[indexValue-1].style.background = "white";
+         }
+      </script>
+   </body>
+</html>

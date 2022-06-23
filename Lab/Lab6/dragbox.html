@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draggable box</title>
+</head>
+<style type="text/css">
+    div{
+        height: 50px;
+        width: 50px;
+        background-color: aqua;
+        cursor: nw-resize;
+    }
+</style>
+<body>
+    <div>
+
+    </div>
+
+    <script type="text/javascript">
+        let box = document.querySelector('div');
+        DragElement(box);
+
+        function DragElement(element){
+            document.addEventListener('mousedown',mouseDown)
+
+            function mouseDown(){
+                
+                document.addEventListener('mousemove',MouseMove);
+                document.addEventListener('mouseup',MouseUp);
+
+            }
+            function MouseMove(el){
+                element.style.height = el.pageY +'px';
+                element.style.width = el.pageX +'px';
+            }
+            function MouseUp(el){
+                document.removeEventListener('mousemove',MouseMove);
+                // document.removeEventListener('mouseup',MouseUp);
+                // element.mouseup = null;
+
+
+            }
+    
+            
+        }
+    </script>
+</body>
+</html>

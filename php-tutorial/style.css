@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+.container{
+    max-width:  80%;
+    background-color: rgb(198,152,241);
+    padding:34px;
+    margin:23px;
+    margin:auto;
+
+}
+.container h3,p{
+    text-align: center;
+}
+input{
+    width:80%;
+}
